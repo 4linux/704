@@ -1,0 +1,11 @@
+$TTL 86400
+@        IN SOA ns1.seudominioaqui. root.seudominioaqui. (
+                 SERIAL ; serial
+                 8h     ; refresh
+                 1h     ; retry
+                 1w     ; expire
+                 3d)    ; negative cache ttl
+
+             IN NS      ns1.seudominioaqui.
+             IN NS      ns2.seudominioaqui.            
+IP_DMZ_AQUI     PTR     oracle.seudominioaqui.

@@ -1,0 +1,9 @@
+dn: o=matriz,dc=joatham4linux,dc=ml
+o: matriz
+objectClass: organization
+objectClass: top
+
+dn: o=filial,dc=joatham4linux,dc=ml
+o: filial
+objectClass: organization
+objectClass: top

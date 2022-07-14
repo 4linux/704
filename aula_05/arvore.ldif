@@ -1,0 +1,108 @@
+# joatham.com
+dn: dc=joatham,dc=com
+objectClass: dcObject
+objectClass: organization
+dc: joatham
+o: exemplo de aula
+
+# admin, joatham.com
+dn: cn=admin,dc=joatham,dc=com
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+cn: admin
+description: LDAP Administrator
+userPassword: 123456
+
+# suporte, joatham.com
+dn: ou=suporte,dc=joatham,dc=com
+objectClass: organizationalUnit
+ou: suporte
+
+# desenvolvimento, joatham.com
+dn: ou=desenvolvimento,dc=joatham,dc=com
+objectClass: organizationalUnit
+ou: desenvolvimento
+
+# testes, joatham.com
+dn: ou=testes,dc=joatham,dc=com
+objectClass: organizationalUnit
+ou: testes
+
+# gerentes, suporte, joatham.com
+dn: ou=gerentes,ou=suporte,dc=joatham,dc=com
+objectClass: organizationalUnit
+ou: gerentes
+
+# funcionarios, suporte, joatham.com
+dn: ou=funcionarios,ou=suporte,dc=joatham,dc=com
+objectClass: organizationalUnit
+ou: funcionarios
+
+# gerentes, desenvolvimento, joatham.com
+dn: ou=gerentes,ou=desenvolvimento,dc=joatham,dc=com
+objectClass: organizationalUnit
+ou: gerentes
+
+# funcionarios, desenvolvimento, joatham.com
+dn: ou=funcionarios,ou=desenvolvimento,dc=joatham,dc=com
+objectClass: organizationalUnit
+ou: funcionarios
+
+# gerentes, testes, joatham.com
+dn: ou=gerentes,ou=testes,dc=joatham,dc=com
+objectClass: organizationalUnit
+ou: gerentes
+
+# funcionarios, testes, joatham.com
+dn: ou=funcionarios,ou=testes,dc=joatham,dc=com
+objectClass: organizationalUnit
+ou: funcionarios
+
+# Ricardo, gerentes, suporte, joatham.com
+dn: cn=Ricardo,ou=gerentes,ou=suporte,dc=joatham,dc=com
+objectClass: inetOrgPerson
+cn: Ricardo
+sn: Prudenciato
+mail: ricardo@joatham.com
+
+# Carlos, gerentes, desenvolvimento, joatham.com
+dn: cn=Carlos,ou=gerentes,ou=desenvolvimento,dc=joatham,dc=com
+objectClass: inetOrgPerson
+cn: Carlos
+sn: Sanches
+mail: Carlos@joatham.com
+
+# Daiana, gerentes, testes, joatham.com
+dn: cn=Daiana,ou=gerentes,ou=testes,dc=joatham,dc=com
+objectClass: inetOrgPerson
+cn: Daiana
+sn: Silva
+mail: daiana@joatham.com
+
+# Paulo, funcionarios, suporte, joatham.com
+dn: cn=Paulo,ou=funcionarios,ou=suporte,dc=joatham,dc=com
+objectClass: inetOrgPerson
+cn: Paulo
+sn: Santos
+mail: paulosantos@joatham.com
+
+# Beatriz, funcionarios, desenvolvimento, joatham.com
+dn: cn=Beatriz,ou=funcionarios,ou=desenvolvimento,dc=joatham,dc=com
+objectClass: inetOrgPerson
+cn: Beatriz
+sn: Motta
+mail: beatrizmotta@joatham.com
+
+# Carlos1, funcionarios, testes, joatham.com
+dn: cn=Carlos1,ou=funcionarios,ou=testes,dc=joatham,dc=com
+objectClass: inetOrgPerson
+cn: Carlos
+sn: Almeida
+mail: carlosalmeida@joatham.com
+
+# Marcondes, funcionarios, testes, joatham.com
+dn: cn=Marcondes,ou=funcionarios,ou=testes,dc=joatham,dc=com
+objectClass: inetOrgPerson
+cn: Marcondes
+sn: Oliveira
+mail: marcondesoliveira@joatham.com

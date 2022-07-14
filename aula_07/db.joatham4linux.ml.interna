@@ -1,0 +1,7 @@
+ns1         IN      A        10.0.0.81
+ns2         IN      A        10.0.0.52
+blog        IN      A        10.0.0.81
+foxclore    IN      A        10.0.0.52
+pentwist    IN      A        10.0.0.52
+ldap        IN      A        10.0.0.52
+www         IN      A        10.0.0.81

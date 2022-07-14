@@ -1,0 +1,21 @@
+dn: ou=Usuarios,o=matriz,dc=joatham4linux,dc=ml
+ou: Usuarios
+objectClass: organizationalUnit
+objectClass: top
+
+dn: ou=Usuarios,o=filial,dc=joatham4linux,dc=ml
+ou: Usuarios
+objectClass: organizationalUnit
+objectClass: top
+
+dn: cn=Linus Torvalds,ou=Usuarios,o=matriz,dc=joatham4linux,dc=ml
+uid: linus
+cn: Linus Torvalds
+sn: linus
+objectClass: inetOrgPerson
+objectClass: posixAccount
+homeDirectory: /home/linust
+loginShell: /bin/bash
+uidNumber: 1020
+gidNumber: 1020
+userPassword: 123456

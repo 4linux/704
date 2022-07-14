@@ -1,0 +1,22 @@
+$TTL 86400
+@           IN SOA ns1.SEU_DOMINIO_AQUI. admin.SEU_DOMINIO_AQUI. (
+            SERIA     ; serial
+            8h        ; refresh
+            1w        ; expire
+            1h        ; retry
+            3d )      ; negative cache ttl
+
+            IN      NS       ns1.SEU_DOMINIO_AQUI.
+            IN      NS       ns2.SEU_DOMINIO_AQUI.
+            IN      MX 10    smtp.SEU_DOMINIO_AQUI.
+            IN      MX 20    ns2.SEU_DOMINIO_AQUI.
+ns1         IN      A        IP_REAL_ORACLE_AQUI
+ns2         IN      A        192.168.200.150
+www         IN      A        IP_REAL_ORACLE_AQUI
+smtp        IN      A        IP_REAL_ORACLE_AQUI
+ftp         IN      A        IP_REAL_ORACLE_AQUI
+mail        IN      CNAME    ns1
+pop         IN      CNAME    ns1
+imap        IN      CNAME    ns1
+webmail     IN      CNAME    ns1
+@           IN      TXT      "v=spf1 a mx ip4:IP_REAL_ORACLE_AQUI -all"
