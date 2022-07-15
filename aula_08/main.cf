@@ -1,0 +1,31 @@
+# line 95: uncomment and specify hostname
+myhostname = mail.joatham4linux.ml
+# line 102: uncomment and specify domain name
+mydomain = joatham4linux.ml
+# line 118: uncomment
+myorigin = $mydomain
+# line 135: change
+inet_interfaces = all
+# line 138: change it if use only IPv4
+inet_protocols = ipv4
+# line 183: add
+mydestination = $myhostname, localhost.$mydomain, localhost, $mydomain
+# line 283: uncomment and specify your local network
+mynetworks = 10.0.0/24, 192.168.100.0/24, 127.0.0.0/8
+# line 438: uncomment (use Maildir)
+home_mailbox = Maildir/
+# line 593: add
+smtpd_banner = $myhostname ESMTP
+# add follows to the end
+# for example, limit an email size for 10M
+message_size_limit = 10485760
+# for example, limit a mailbox for 1G
+mailbox_size_limit = 1073741824
+
+# SMTP-Auth setting
+smtpd_sasl_type = dovecot
+smtpd_sasl_path = private/auth
+smtpd_sasl_auth_enable = yes
+smtpd_sasl_security_options = noanonymous
+smtpd_sasl_local_domain = $myhostname
+smtpd_recipient_restrictions = permit_mynetworks, permit_auth_destination, permit_sasl_authenticated, reject

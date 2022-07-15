@@ -1,0 +1,13 @@
+###### Minhas ACL's ###### 
+acl RedeVPN src 192.168.100.0/24
+acl Internacional dstdomain .com
+acl Globo dstdomain .globo
+acl 4linux dstdomain .4linux.com.br
+acl Youtube dstdomain .youtube.com.br
+
+###### Minhas regras ###### 
+http_access allow RedeVPN 4linux
+http_access deny RedeVPN Globo
+http_access deny RedeVPN Youtube
+http_access allow RedeVPN Internacional
+http_access allow RedeVPN
